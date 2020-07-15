@@ -1,0 +1,18 @@
+<div class="col-md-6">
+
+  <table class="table table-striped">
+    <thead>
+    <tr>
+      <th>Very Interesting Survey</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let question of quiz.questions">
+      <td>
+        <app-question [question]=question.question [options]="question.question_type.options"></app-question>
+      </td>
+    </tr>
+    </tbody>
+  </table>
+
+</div>
